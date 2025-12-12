@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mariebooks{
+    width: 300px;
+    height: 290px;
+}
+.Substances {
+    width: 260px;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: small;
+}
+
+.allbook{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.public{
+    background-color:#FFFFFF;
+    width: 300px;
+    height: 500px;
+   box-shadow: 2px 2px 5px #a9a7a7;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+.active{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #5BC0BE;
+    font-family: cursive;
+}
+.many{
+    text-align: center;
+    font-family: cursive;
+    margin: 30px 20px;
+    font-size: larger;
+}
+.woman{
+    width: 400px;
+    height: 600px;
+}
+.letter{
+    width: 350px;
+    margin-left: 24px;
+    font-family: cursive;
+    font-size: small;
+    margin-bottom: 10px;
+}
+.whos{
+    font-weight:bolder;
+    font-family: cursive;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 24px;
+}
+.mycontent{
+    display: flex;
+    gap: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.womanall{
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 0px #a9a7a7 ;
+    width: 400px;
+    height:800px;
+    margin-bottom: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 30px;
+}
+.books{
+    font-family: cursive;
+    text-align: center;
+    margin: 70px 30px;
+}
+.famous {
+    display: flex;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.famousimg{
+    width: 600px;
+    height: 500px;
+}
+.writeup{
+    width: 200px;
+    font-weight: bolder;
+    font-family: cursive;
+}
+.notekey{
+    width: 1000px;
+    margin-left: 20%;
+    margin-top: 40px;
+    font-weight: 700;
+    font-family: cursive;
+}
+.nice{
+    display: flex;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 30px;
+}
+.booksniceimg{
+    width:350px;
+    height: 300px;
+}
+.booksniceimgs {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 24%;
+    margin-bottom: 30px;
+}
+.nices{
+    display: flex;
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 30px;
+}
+@media screen and (max-width:786px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mariebooks{
+    width: 300px;
+    height: 290px;
+}
+.Substances {
+    width: 260px;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: small;
+}
+.many{
+    font-family: cursive;
+    font-size: small;
+    text-align: center;
+}
+.allbook{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    gap: 40px;
+}
+.books{
+    font-family: cursive;
+    text-align: center;
+    font-size: small;
+}
+.mycontent{
+    flex-direction: column;
+    gap: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.famous {
+    flex-direction: column;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.books{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.writeup{
+    width: 200px;
+    font-weight: 100px;
+    font-family: cursive;
+    text-align: center;
+}
+.notekey{
+    width: 400px;
+    margin-top: 40px;
+    font-weight: 400;
+    font-family: cursive;
+    text-align: center;
+}
+.books{
+    font-family: cursive;
+    margin: 50px 10px;
+}
+.nice{
+    flex-direction: column;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px;
+}
+.nices{
+    flex-direction: column;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px;
+}
+.famousimg{
+    width: 300px;
+    height: 300px;
+}
+}

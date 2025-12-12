@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap');
+
+
+:root{
+  --accent: #2CC4BA;
+  --muted: #555;
+  --light-border: #E6E6E6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.edu-hero {
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.edu-hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 68px;
+  color: #fff;
+  margin: 0;
+}
+
+.hero-subtitle {
+  margin-top: 6px;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.9;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.hero-subtitle::after {
+  content: "";
+  width: 70%;
+  height: 3px;
+  background: var(--accent);
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.edu-main {
+  background: #fff;
+  max-width: 1300px;
+  margin: -40px auto 60px;
+  padding: 60px 70px;
+  border-radius: 8px;
+  box-shadow: 0 4px 22px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+
+.edu-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.edu-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-block h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.block-list {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.block-text {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.photo-card {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--light-border);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top {
+  height: 260px;
+}
+
+.bottom {
+  height: 300px;
+}
+
+.chart_container img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 1000px) {
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-right {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .top, .bottom {
+    height: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .edu-right {
+    grid-template-columns: 1fr;
+  }
+
+  .top, .bottom {
+    height: 220px;
+  }
+
+  .edu-main {
+    padding: 80px 20px;
+  }
+}

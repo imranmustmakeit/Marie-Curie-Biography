@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navBackground {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000001;
+  width: 100%;
+}
+
+.allContent {
+  margin: 5rem auto 0;
+  padding: 0 1.5rem;
+  max-width: 1200px;
+}
+
+.overallHeading {
+  font-family: 'Rochester', cursive;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+span {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+ul {
+  padding-left: 2rem;
+}
+
+.bioContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.container1,
+.container2 {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 1.6rem;
+}
+
+.EarlyLife {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: justify;
+}
+
+.EarlyLife1 {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.EarlyLife img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.LifeInParis {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: justify;
+}
+
+.lifeInParischild1,
+.lifeInParischild2 {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.lifeInParischild1 img,
+.lifeInParischild2 img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .overallHeading {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .overallHeading {
+    font-size: 32px;
+  }
+
+  .bioContainer {
+    padding: 1rem 0;
+  }
+
+  .EarlyLife,
+  .LifeInParis {
+    padding: 0 1rem;
+  }
+
+  span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overallHeading {
+    font-size: 28px;
+  }
+
+  .allContent {
+    margin-top: 4.5rem;
+    padding: 0 1rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+  }
+
+  .EarlyLife1,
+  .lifeInParischild1,
+  .lifeInParischild2 {
+    flex-direction: column;
+  }
+}

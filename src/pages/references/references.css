@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rochester&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero_bg {
+  background: #0E1A35;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  color: white;
+}
+
+.hero_content h3 {
+  font-family: "Rochester", cursive;
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero_content p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.hero_image {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.hero_image img {
+  width: 260px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.reference_container {
+  padding: 80px 100px;
+}
+
+.reference_container h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.reference_boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #ececec;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.box h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.box p {
+  font-size: 14px;
+  color: #5b5b5b;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.box a {
+  color: #2CC4BA;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.box a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .hero_bg {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .reference_container {
+    padding: 40px 20px;
+  }
+
+  .reference_boxes {
+    grid-template-columns: 1fr;
+  }
+}

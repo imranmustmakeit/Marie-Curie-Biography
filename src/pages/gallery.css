@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(11, 19, 43);
+    padding: 5rem 4rem;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.header1 h1 {
+    font-size: 90px;
+    font-family: 'Rochester', cursive;
+    font-weight: 500;
+}
+
+.header1 p {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.header2 img {
+    width: 420px;
+    max-width: 100%;
+}
+
+
+.GalleryContent {
+    width: 100%;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gridUsingFlex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.IMAGE {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.IMAGE img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.IMAGE:hover img {
+    transform: scale(1.1);
+}
+
+
+.galleryContainer1 {
+    display: flex;
+    gap: 15px;
+}
+
+.galleryContainer1Child1 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.galleryContainer1Childchild {
+    display: flex;
+    gap: 15px;
+}
+
+.galleryContainer1Childchild1 {
+    width: 65%;
+}
+
+.img1,
+.img2 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.imgChild {
+    width: 100%;
+}
+
+.imgChildd {
+    display: flex;
+    gap: 15px;
+}
+
+.imgChildd div {
+    width: 50%;
+}
+
+.galleryContainer1Child2 {
+    width: 30%;
+}
+
+
+.galleryContainer2,
+.galleryContainer5 {
+    display: flex;
+    gap: 15px;
+}
+
+.galleryContainer2 div,
+.galleryContainer5 div {
+    width: 50%;
+}
+
+.galleryContainer3 {
+    display: flex;
+    gap: 15px;
+}
+
+.galleryContainer3 div {
+    width: 33.3%;
+}
+
+.galleryContainer4 {
+    display: flex;
+    gap: 15px;
+}
+
+.galleryCont1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.galleryCont2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.galleryConta2 {
+    display: flex;
+    gap: 15px;
+}
+
+.galleryConta2 div {
+    width: 50%;
+}
+
+@media (max-width: 992px) {
+
+    .header {
+        padding: 4rem 2rem;
+        gap: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .header1 h1 {
+        font-size: 70px;
+    }
+
+    .galleryContainer1,
+    .galleryContainer2,
+    .galleryContainer3,
+    .galleryContainer4,
+    .galleryContainer5 {
+        flex-direction: column;
+    }
+
+    .galleryContainer1Child1,
+    .galleryContainer1Child2,
+    .galleryContainer2 div,
+    .galleryContainer3 div,
+    .galleryCont1,
+    .galleryCont2,
+    .galleryConta2 div,
+    .galleryContainer5 div {
+        width: 100%;
+    }
+
+    .img1, .img2 {
+        width: 100%;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .imgChild,
+    .imgChildd div {
+        height: auto;
+    }
+
+    .imgChildd {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 3rem 1rem;
+    }
+
+    .header1 h1 {
+        font-size: 50px;
+    }
+
+    .header1 p {
+        font-size: 20px;
+    }
+
+    .GalleryContent {
+        padding: 2rem 1rem;
+    }
+
+    .img1, .img2, .imgChildd {
+        flex-direction: column;
+    }
+
+    .imgChild,
+    .imgChildd div {
+        width: 100%;
+    }
+
+    .galleryContainer3 div,
+    .galleryConta2 div {
+        width: 100%;
+    }
+}
