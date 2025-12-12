@@ -1,5 +1,6 @@
 import Marie from '/marie_curie.png'
 import './references.css'
+import Footer from '../../component/footer';
 
 function References() {
   return (
@@ -74,6 +75,7 @@ function References() {
             </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
